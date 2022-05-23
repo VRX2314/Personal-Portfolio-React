@@ -240,7 +240,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .technology-container-technology-icons {
@@ -348,13 +348,15 @@ body {
   /******************************* Contact mobile ********************************/
 
   .contacts-container {
+    position: relative;
     display: flex;
     background-color: var(--black);
     color: var(--cool-white);
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 3rem;
+    margin-top: 6rem !important;
   }
 
   .contact-details h1 {
