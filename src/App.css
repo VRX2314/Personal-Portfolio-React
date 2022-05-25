@@ -101,16 +101,34 @@ body {
     width: 100% !important;
   }
 
-  .object-container div {
-    justify-content: center;
-    align-items: center;
-    width: 100% !important;
-    height: 90% !important;
-  }
-
-  .object-container canvas {
+  .object-container iframe {
     width: 100% !important;
     height: 100% !important;
+  }
+
+  .object-container .object {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .object-container .buttons {
+    display: flex;
+    height: 5%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .full-screen {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    z-index: 999;
+  }
+
+  .full-object {
+    display: none !important;
   }
 
   .object-container h2 {
@@ -812,6 +830,37 @@ body {
   color: var(--black);
   background-color: var(--cool-white);
   width: 10rem !important;
+  transition: all 0.5s;
+}
+
+.hide-object:hover {
+  cursor: pointer;
+  background-color: var(--black);
+  border: 1px solid var(--cool-white);
+  color: var(--cool-white);
+}
+
+.full-object {
+  display: inline;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: var(--black);
+  background-color: var(--cool-white);
+  width: 3rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.full-object:hover {
+  cursor: pointer;
+  background-color: var(--black);
+  border: 1px solid var(--cool-white);
+  color: var(--cool-white);
 }
 
 /******************************* 3D Object 4k Laptop ********************************/
@@ -824,6 +873,28 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
+}
+
+.object-container .object {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.object-container .buttons {
+  display: flex;
+  height: 5%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  z-index: 999;
 }
 
 .object-container iframe {
@@ -877,10 +948,18 @@ body {
 }
 
 .canvas-warning {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   background: none;
   font-size: var(--description);
   color: rgb(253, 176, 176);
   font-weight: 500;
+}
+
+.canvas-warning svg {
+  font-size: 2rem;
 }
 
 /******************************* Navbar 4k laptop ********************************/
@@ -892,7 +971,7 @@ body {
   display: flex;
   padding: 0px;
   background-color: rgba(117, 117, 117, 0.5);
-  z-index: 999;
+  z-index: 998;
 }
 
 .menu a {
@@ -1265,16 +1344,20 @@ body {
 
 /******************************* Small Height Windows ********************************/
 
-@media (max-height: 850px) {
-  .about-content,
+@media (max-height: 950px) {
   .technology-container,
   .featured-container {
     padding-top: 3rem;
     min-height: 70rem;
   }
 
+  .about-content {
+    min-height: 40rem;
+    max-height: 100vh;
+  }
+
   .contacts-container {
     padding-top: 3rem;
-    min-height: 60rem;
+    min-height: 30rem;
   }
 }

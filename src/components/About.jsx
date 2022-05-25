@@ -12,7 +12,10 @@ const About = () => {
                 <div className='about-content-title'>
                     <h1>About Me</h1>
                 </div>
-                <div className='about-content-paragraph-container'>
+            </Fade>
+
+            <div className='about-content-paragraph-container'>
+                <Fade>
                     <div className='about-content-paragraph'>
                         <p>Hello there, I'm Vansh.
                             I'm currently a Computer Engineering student in my 4th year of a 6 year
@@ -22,9 +25,10 @@ const About = () => {
                             <img src={Vansh} alt='Vansh' className='image' />
                         </div>
                     </div>
+                </Fade>
 
-                </div>
-            </Fade>
+
+            </div>
 
         </div>
     )
