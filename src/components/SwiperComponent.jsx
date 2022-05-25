@@ -12,18 +12,14 @@ import WTproject from '../assets/WTproject.png'
 import PLIIproject from '../assets/PLIIproject.jpeg'
 import FWDproject from '../assets/FWDproject.png'
 import BDSproject from '../assets/BDSproject.png'
+import Portfolio from '../assets/Portfolio.png'
 
 import { SiPython } from 'react-icons/si'
 import { ImStatsDots } from 'react-icons/im'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { IoLogoCss3 } from 'react-icons/io'
-import { SiJavascript } from 'react-icons/si'
-import { SiAngular } from 'react-icons/si'
-import { SiPhp } from 'react-icons/si'
-import { SiMongodb } from 'react-icons/si'
-import { SiMysql } from 'react-icons/si'
-import { SiNodedotjs } from 'react-icons/si'
-import { SiCplusplus } from 'react-icons/si'
+import { SiJavascript, SiAngular, SiReact, SiPhp, SiMongodb, SiMysql, SiNodedotjs, SiCplusplus, SiGithub } from 'react-icons/si'
+import { BiCube } from 'react-icons/bi'
 
 let width = window.innerWidth
 
@@ -43,6 +39,22 @@ const SwiperComponent = () => {
         >
             <SwiperSlide>
                 <ProjectCard
+                    title='Personal Portfolio'
+                    description='My Personal Portfolio'
+                    stack={
+                        <>
+                            <AiFillHtml5 />
+                            <IoLogoCss3 />
+                            <SiReact />
+                            <BiCube />
+                            <SiGithub />
+                        </>
+                    }
+                    image={Portfolio}
+                />
+            </SwiperSlide>
+            <SwiperSlide>
+                <ProjectCard
                     title="Ocean O' NFT"
                     description='NFT Marketplace'
                     stack={<>
@@ -50,8 +62,9 @@ const SwiperComponent = () => {
                         <IoLogoCss3 />
                         <SiJavascript />
                         <SiAngular />
-                        <SiMongodb />
                         <SiNodedotjs />
+                        <SiMongodb />
+
                     </>}
                     image={WTproject}
                 />
