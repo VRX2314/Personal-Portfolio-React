@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio-React/static/css/main.a5bb267a.css",
-    "main.js": "/Personal-Portfolio-React/static/js/main.90bc67d0.js",
+    "main.css": "/Personal-Portfolio-React/static/css/main.2b1cbf0d.css",
+    "main.js": "/Personal-Portfolio-React/static/js/main.405e1893.js",
     "static/js/485.4ff57027.chunk.js": "/Personal-Portfolio-React/static/js/485.4ff57027.chunk.js",
     "static/media/IMG-0186.PNG": "/Personal-Portfolio-React/static/media/IMG-0186.6e05c23fca78ed33dc02.PNG",
     "static/media/WTproject.png": "/Personal-Portfolio-React/static/media/WTproject.e83c56e9a17576009be4.png",
     "static/media/FWDproject.png": "/Personal-Portfolio-React/static/media/FWDproject.d0749cca4480da844c82.png",
+    "static/media/Portfolio.png": "/Personal-Portfolio-React/static/media/Portfolio.099a7a966df591422f9d.png",
     "static/media/IOTproject.png": "/Personal-Portfolio-React/static/media/IOTproject.26baefe6031943fcaab8.png",
     "static/media/PLIIproject.jpeg": "/Personal-Portfolio-React/static/media/PLIIproject.6c6e2fadee30b402f388.jpeg",
     "static/media/BDSproject.png": "/Personal-Portfolio-React/static/media/BDSproject.c23d00f545ebea8f5198.png",
     "index.html": "/Personal-Portfolio-React/index.html",
-    "main.a5bb267a.css.map": "/Personal-Portfolio-React/static/css/main.a5bb267a.css.map",
-    "main.90bc67d0.js.map": "/Personal-Portfolio-React/static/js/main.90bc67d0.js.map",
+    "main.2b1cbf0d.css.map": "/Personal-Portfolio-React/static/css/main.2b1cbf0d.css.map",
+    "main.405e1893.js.map": "/Personal-Portfolio-React/static/js/main.405e1893.js.map",
     "485.4ff57027.chunk.js.map": "/Personal-Portfolio-React/static/js/485.4ff57027.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5bb267a.css",
-    "static/js/main.90bc67d0.js"
+    "static/css/main.2b1cbf0d.css",
+    "static/js/main.405e1893.js"
   ]
 }
