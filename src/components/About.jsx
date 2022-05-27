@@ -22,7 +22,7 @@ const About = () => {
                             degree program. I develop beautiful, enterprise ready web applications with all the modern technologies.
                         </p>
                         <div className='image-container'>
-                            <img src={Vansh} alt='Vansh' className='image' />
+
                         </div>
                     </div>
                 </Fade>
