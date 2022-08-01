@@ -130,11 +130,8 @@ const Skills = () => {
                                         <p className='skills-subtitle'>DBMS</p>
                                     </Fade>
                                 </div>
-                                <Fade>
-                                    {showClick ? <p className='skills-click'>Try Clicking The Buttons 👆</p> : <></>}
-                                </Fade>
-
                             </>}
+                {showClick ? <p className='skills-click'>Try Clicking The Buttons 👆</p> : <></>}
             </div>
 
         </div>
