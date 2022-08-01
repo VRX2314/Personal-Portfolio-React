@@ -1,33 +1,37 @@
 import React from 'react'
-
-import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMail, AiOutlineSlack } from 'react-icons/ai'
+import MailIcon from '../assets/mail Icon.svg'
+import Insta from '../assets/Insta.svg'
+import LinkedIn from '../assets/LinkedIn.svg'
 import { Fade } from 'react-reveal'
+import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 
 const Contact = () => {
     return (
-        <div className="contact-details" id="contacts">
-            <Fade>
-                <h1>Contact</h1>
-                <div className='contact-links' >
-                    <a className='contact-list-container' href="https://www.instagram.com/vansh_shah2314/" target='_blank' rel="noreferrer">
-                        <AiOutlineInstagram />
-                        <p>Instagram</p>
-                    </a>
-                    <a className='contact-list-container' href='https://www.linkedin.com/in/vansh-shah-25453a223/' target='_blank' rel="noreferrer">
-                        <AiOutlineLinkedin />
-                        <p>LinkedIn</p>
-                    </a>
-                    <a className='contact-list-container' href='https://join.slack.com/t/vrxsummerstuff/shared_invite/zt-17xmafrlf-FbTBfyLMjunhb3f5Sk8lLQ' target='_blank' rel="noreferrer">
-                        <AiOutlineSlack />
-                        <p>Slack</p>
-                    </a>
-                    <a className='contact-list-container' href='https://mail.google.com/mail/?view=cm&fs=1&to=vanshgalaxy@gmail.com' target='_blank' rel="noreferrer">
-                        <AiOutlineMail />
-                        <p>Mail</p>
-                    </a>
+        <div className='contact-container' id="contact">
+            <Fade left>
+                <div className='contact-content'>
+                    Interested In <br /> Working With Me?
                 </div>
             </Fade>
+            <Fade left cascade>
+                <div className='contact-buttons'>
+                    <a href='https://www.linkedin.com/in/vansh-shah-25453a223/' target="_blank" className='contact-btn green-gradient'>
+                        <img className='contact-logo' src={LinkedIn} />
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vanshgalaxy@gmail.com" target="_blank" className='contact-btn yellow-gradient'>
+                        <img className='contact-logo' src={MailIcon} />
+                    </a>
+                    <a href='https://www.instagram.com/vansh__2314/' target="_blank" className='contact-btn pink-gradient'>
+                        <img className='contact-logo' src={Insta} />
+                    </a>
 
+                </div>
+            </Fade>
+            <Fade>
+                <a href='#top' className='scroll-button-container'>
+                    <BsFillArrowUpCircleFill />
+                </a>
+            </Fade>
         </div>
     )
 }
