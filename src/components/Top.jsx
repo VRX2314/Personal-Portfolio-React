@@ -59,6 +59,9 @@ const top = () => {
                     <a className='hero-btn' href='#contact'>LET’S TALK!</a>
                 </div>
             </Fade>
+            <div className='copyright blue-alt-gradient'>
+                Under Development
+            </div>
         </div >
     )
 }

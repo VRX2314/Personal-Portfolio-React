@@ -42,6 +42,15 @@ body {
 
 /******************************* View Port 390 x 844 *********************************/
 
+.copyright {
+  color: var(--font-color-white);
+  position: fixed;
+  top: 98.1%;
+  font-size: var(--descritpion-phone);
+  border-radius: 1px;
+  z-index: 100;
+}
+
 .underglow {
   background-color: #ff048c;
   width: 50px;
@@ -567,6 +576,12 @@ body {
     width: 164px;
     height: 2px;
     margin-top: 10px;
+  }
+
+  .copyright {
+    top: 97.5%;
+    font-size: var(--descritpion-pc);
+    padding: 2px;
   }
 
   .blue-gradient {
