@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { HiOutlineCubeTransparent } from 'react-icons/hi'
 import { AiFillWarning } from 'react-icons/ai'
+import { FiMinimize2 } from 'react-icons/fi'
 import { Fade } from 'react-reveal'
 
 const About = () => {
@@ -52,6 +53,11 @@ const About = () => {
                             <div className='model-warning'>
                                 <AiFillWarning />
                                 May run Slower on older devices
+                            </div>
+                            <div className='model-tip'>
+                                <FiMinimize2 />
+                                Pinch to zoom out if <br />
+                                model is zoomed in
                             </div>
                             <button className='object-load-button blue-alt-gradient' onClick={() => handleLoad()}>{isLoad}</button>
                         </div>}

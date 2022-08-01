@@ -16,9 +16,11 @@ const Skills = () => {
     const [showBackend, setShowBackend] = useState(false)
     const [showSoftware, setShowSoftware] = useState(false)
     const [showDBMS, setShowDBMS] = useState(false)
+    const [showClick, setShowClick] = useState(true)
 
     const handleFrontEnd = () => {
         if (!showFrontend) {
+            setShowClick(false)
             setShowFrontend(true)
             setShowBackend(false)
             setShowSoftware(false)
@@ -34,6 +36,7 @@ const Skills = () => {
 
     const handleBackEnd = () => {
         if (!showBackend) {
+            setShowClick(false)
             setShowFrontend(false)
             setShowBackend(true)
             setShowSoftware(false)
@@ -49,6 +52,7 @@ const Skills = () => {
 
     const handleSoftware = () => {
         if (!showSoftware) {
+            setShowClick(false)
             setShowFrontend(false)
             setShowBackend(false)
             setShowSoftware(true)
@@ -64,6 +68,7 @@ const Skills = () => {
 
     const handleDBMS = () => {
         if (!showDBMS) {
+            setShowClick(false)
             setShowFrontend(false)
             setShowBackend(false)
             setShowSoftware(false)
@@ -117,8 +122,6 @@ const Skills = () => {
                                         <p className='skills-subtitle'>Backend</p>
                                     </Fade>
                                 </div>
-
-
                                 <div className='skills-buttons-container'>
                                     <Fade right>
                                         <button className='skills-btn dbms' onClick={() => handleDBMS()}>
@@ -127,8 +130,13 @@ const Skills = () => {
                                         <p className='skills-subtitle'>DBMS</p>
                                     </Fade>
                                 </div>
+                                <Fade>
+                                    {showClick ? <p className='skills-click'>Try Clicking The Buttons 👆</p> : <></>}
+                                </Fade>
+
                             </>}
             </div>
+
         </div>
     )
 }

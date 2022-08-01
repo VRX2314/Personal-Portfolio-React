@@ -231,6 +231,10 @@ body {
   align-items: center;
 }
 
+.skills-click {
+  font-size: 0.8rem;
+}
+
 .skills-btn {
   width: 4.063rem;
   height: 4.063rem;
@@ -512,6 +516,15 @@ body {
   gap: 5px;
 }
 
+.model-tip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: rgb(255, 187, 0);
+  gap: 5px;
+}
+
 /******************************* Contact Section Phone *********************************/
 
 .contact-title {
@@ -789,6 +802,9 @@ body {
     margin-top: 3rem;
   }
 
+  .skills-click {
+    font-size: 1rem;
+  }
   .skills-buttons-container {
     width: 40%;
     display: flex;
