@@ -411,6 +411,7 @@ body {
   text-decoration: none;
   font-size: var(--descritpion-phone);
   font-weight: 600;
+  padding: 5px;
 }
 
 .project-description {
@@ -506,6 +507,14 @@ body {
   width: 7.063rem;
   height: 2.25rem;
   font-family: "Montserrat", sans-serif;
+  transition: all 1s;
+}
+
+.object-load-button:hover {
+  background: #f8f9fa;
+  cursor: pointer;
+  border: 1px solid #0267ff;
+  color: var(--font-color-black);
 }
 
 .model-warning {

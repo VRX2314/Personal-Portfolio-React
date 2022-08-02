@@ -1,5 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal'
+import { SiGithub } from 'react-icons/si'
 
 const Projects = () => {
     return (

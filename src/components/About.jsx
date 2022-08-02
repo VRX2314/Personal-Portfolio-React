@@ -52,7 +52,7 @@ const About = () => {
                             Interactive 3D Model <br /> of My Room
                             <div className='model-warning'>
                                 <AiFillWarning />
-                                May run Slower on older devices
+                                Might take 30-60s to load <br />May impact Performance
                             </div>
                             <div className='model-tip'>
                                 <FiMinimize2 />
