@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiHtml5, SiCss3, SiJavascript, SiAngular, SiReact } from 'react-icons/si'
+import { SiHtml5, SiCss3, SiJavascript, SiAngular, SiReact, SiFigma } from 'react-icons/si'
 
 const Frontend = () => {
     return (
@@ -36,6 +36,12 @@ const Frontend = () => {
                         <SiReact />
                     </div>
                     <p>React 18</p>
+                </div>
+                <div className='skills-display-logo-text'>
+                    <div className='skills-logo-container'>
+                        <SiFigma />
+                    </div>
+                    <p>Figma</p>
                 </div>
             </div>
             <p className='skills-display-close'>Tap Again to Close</p>
