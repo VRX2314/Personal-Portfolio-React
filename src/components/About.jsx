@@ -4,6 +4,7 @@ import { HiOutlineCubeTransparent } from 'react-icons/hi'
 import { AiFillWarning } from 'react-icons/ai'
 import { FiMinimize2 } from 'react-icons/fi'
 import { Fade } from 'react-reveal'
+import dp from '../assets/dp.png'
 
 const About = () => {
 
@@ -29,7 +30,9 @@ const About = () => {
                     <div className='underglow'></div>
                 </div>
                 <div className="about-content-container">
-                    <div className="about-display-pic green-gradient"></div>
+                    <div className="about-display-pic green-gradient">
+                        <img src={dp} className="dp" />
+                    </div>
                 </div>
                 <div className="about-content-description">
                     Hello 👋, I am <b>Vansh</b>.I am a fourth year Computer Engineering <b>student</b> pursuing a <b>Bachelor’s Degree in

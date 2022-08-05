@@ -1,10 +1,12 @@
 import React from 'react'
 import Fade from 'react-reveal'
-import { SiGithub, SiMongodb, SiExpress, SiAngular, SiNodedotjs, SiMysql, SiPhp, SiJavascript, SiXampp, SiPython } from 'react-icons/si'
+import { SiGithub, SiMongodb, SiExpress, SiAngular, SiNodedotjs, SiMysql, SiPhp, SiJavascript, SiXampp, SiPython, SiPandas, SiJupyter } from 'react-icons/si'
 import { GoGraph } from 'react-icons/go'
+import { VscFilePdf } from 'react-icons/vsc'
 import Ocean from '../assets/Ocean O’NFT.svg'
 import Layman from '../assets/The_Laymans_Guide.svg'
 import Expense from '../assets/Expense.svg'
+import Covid from '../assets/Covid.svg'
 
 const Projects = () => {
     return (
@@ -59,10 +61,20 @@ const Projects = () => {
                 </Fade>
                 <Fade left>
                     <div className="project-card-container">
-                        <div className="project-card-top blue-gradient"></div>
+                        <div className="project-card-top blue-gradient">
+                            <div className="project-card-img-container">
+                                <img className="project-card-img" style={{ width: '70%' }} src={Covid} />
+                            </div>
+                        </div>
                         <div className="project-card-bottom">
-                            <p className="project-description">Description</p>
-                            <a href="#" className="project-btn blue-gradient" target="_blank">View Project <SiGithub /></a>
+                            <p className="project-description">An autoregressive integrated moving average model fed data from American Unemployment rate records to predict the trend in unemployment due to the lockdowns initiated to control Covid 19.</p>
+                            <div className='stack'>
+                                <SiPandas />
+                                <SiPython />
+                                <SiJupyter />
+                                <GoGraph />
+                            </div>
+                            <a href="../assets/C093_Prescriptive Analysis of Unemployment.pdf" download className="project-btn blue-gradient" target="_blank">View Project <VscFilePdf /></a>
                         </div>
                     </div>
                 </Fade>
@@ -79,8 +91,8 @@ const Projects = () => {
                             </p>
                             <div className='stack'>
                                 <SiMysql />
-                                <SiXampp />
                                 <SiJavascript />
+                                <SiXampp />
                                 <SiPhp />
                             </div>
                             <a href="#" className="project-btn yellow-gradient" target="_blank">View Project <SiGithub /></a>

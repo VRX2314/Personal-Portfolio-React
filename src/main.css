@@ -45,9 +45,11 @@ body {
 .copyright {
   color: var(--font-color-white);
   position: fixed;
-  top: 98.1%;
+  bottom: 0px;
   font-size: var(--descritpion-phone);
-  border-radius: 1px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: 5px;
   z-index: 100;
 }
 
@@ -485,6 +487,14 @@ body {
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dp {
+  width: 86%;
 }
 
 .about-content-description {
@@ -638,9 +648,12 @@ body {
   }
 
   .copyright {
-    top: 97.5%;
-    font-size: var(--descritpion-pc);
-    padding: 2px;
+    color: var(--font-color-white);
+    position: fixed;
+    font-size: var(--descritpion-phone);
+    border-radius: 2px;
+    padding: 5px;
+    z-index: 100;
   }
 
   .blue-gradient {
@@ -1019,23 +1032,43 @@ body {
     border-radius: 5px;
   }
 
+  .project-card-image-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .project-card-img {
+    width: 50%;
+    height: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .project-card-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     min-height: 460px;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 15px;
     border-top: 1px rgba(0, 0, 0, 0.25) solid;
     box-shadow: none;
     border-radius: 5px;
+    gap: 20px;
   }
 
   .project-btn {
     display: flex;
-    width: 8.313rem;
+    width: 10.313rem;
     height: 2.625rem;
     color: white;
     border-radius: 5px;
@@ -1050,6 +1083,17 @@ body {
     height: 90%;
     width: 100%;
     font-size: var(--descritpion-pc);
+  }
+
+  .stack {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
   }
 
   /******************************* About Section PC *********************************/
@@ -1083,9 +1127,17 @@ body {
   }
 
   .about-display-pic {
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 12.5rem;
+    height: 12.5rem;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .dp {
+    width: 86%;
   }
 
   .about-content-description {
@@ -1559,29 +1611,43 @@ body {
     flex-direction: row-reverse;
   }
 
-  .project-card-top {
+  .project-card-image-container {
+    display: flex;
     width: 100%;
-    min-height: 500px;
-    border-radius: 5px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .project-card-img {
+    width: 50%;
+    height: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .project-card-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    min-height: 500px;
+    min-height: 460px;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 15px;
     border-top: 1px rgba(0, 0, 0, 0.25) solid;
     box-shadow: none;
     border-radius: 5px;
+    gap: 20px;
   }
 
   .project-btn {
     display: flex;
-    width: 8.313rem;
+    width: 10.313rem;
     height: 2.625rem;
     color: white;
     border-radius: 5px;
@@ -1596,6 +1662,17 @@ body {
     height: 90%;
     width: 100%;
     font-size: var(--descritpion-pc);
+  }
+
+  .stack {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
   }
 
   /******************************* About Section 4k *********************************/
@@ -1701,7 +1778,7 @@ body {
     gap: 5px;
   }
 
-  /******************************* Contact Section Phone *********************************/
+  /******************************* Contact Section 4k *********************************/
 
   .contact-title {
     width: 100%;

@@ -60,7 +60,7 @@ const top = () => {
                 </div>
             </Fade>
             <div className='copyright blue-alt-gradient'>
-                Under Development
+                Vansh Shah 	&#169; 2022
             </div>
         </div >
     )
