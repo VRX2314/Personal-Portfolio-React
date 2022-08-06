@@ -35,13 +35,13 @@ const About = () => {
                     </div>
                 </div>
                 <div className="about-content-description">
-                    Hello 👋, I am <b>Vansh</b>.I am a fourth year Computer Engineering <b>student</b> pursuing a <b>Bachelor’s Degree in
-                        Technology 🎓</b> . I have a strong grasp on <b>web development 💻</b> and also have experience
+                    Hello 👋, I am <b>Vansh</b>. I am a fourth year Computer Engineering <b>student</b> pursuing a <b>Bachelor’s Degree in
+                        Technology 🎓</b> in a six year integrated course. I have a strong grasp on <b>web development 💻</b> and also have experience
                     with <b>software development 🧑‍💻</b> and <b>data modelling, shaping 📈</b> for machine learning models.
-                    Coding has always come <b>naturally</b> to me, and I love desiging UI/UX, its almost like a hobby to me.
-                    I am comfortable with both aesthetic design as well as implementation of concept and
-                    don’t have much difficulty in learning new tools/frameworks. Currently curious about
-                    Web3 development. Also, I produce music 🎧 play the guitar 🎸, and love playing Pokemon 😁.
+                    Coding has always come <b>naturally</b> to me, and I love designing UI/UX, its almost like a hobby to me.
+                    I am comfortable with both aesthetic <b>design</b> as well as <b>implementation</b> of concept and
+                    don’t have much difficulty in <b>learning</b> new tools/frameworks. Currently <b>curious</b> about
+                    Web3 development and AI 🤖. Also, I produce music 🎧 play the guitar 🎸, and love playing Pokémon 😁.
                 </div>
                 <div className='about-content-model'>
                     {isModel ? <div className='about-content-model-frame'>
