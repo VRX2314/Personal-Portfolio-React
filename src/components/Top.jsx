@@ -55,7 +55,7 @@ const top = () => {
             <Fade>
                 <div className='hero-container'>
                     <div className='hero-title'>I Am <br /> Vansh </div>
-                    <div className='hero-description'>A fourth year computer engineering <b>student</b> with a passion for <b>design</b> and <b>development</b></div>
+                    <div className='hero-description'>A second year computer engineering <b>student</b> with a passion for <b>design</b> and <b>development</b></div>
                     <a className='hero-btn' href='#contact'>LET’S TALK!</a>
                 </div>
             </Fade>
